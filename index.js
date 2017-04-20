@@ -15,6 +15,12 @@ var SORTINGALGORITHMS = [
   "Your daily sorting algorithm is Bubble Sort",
   "Your daily sorting algorithm is Binary Tree Sort",
   "Your daily sorting algorithm is Cycle Sort",
+  "Your daily sorting algorithm is Library Sort",
+  "Your daily sorting algorithm is Patience sorting",
+  "Your daily sorting algorithm is Smooth Sort",
+  "Your daily sorting algorithm is Strand Sort",
+  "Your daily sorting algorithm is Tournament Sort",
+  "Your daily sorting algorithm is Cocktail Sort",
 ];
 
 /**
