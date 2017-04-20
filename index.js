@@ -6,6 +6,15 @@ var SORTINGALGORITHMS = [
   "Your daily sorting algorithm is Merge Sort",
   "Your daily sorting algorithm is In Place merge sort",
   "Your daily sorting algorithm is Heap Sort",
+  "Your daily sorting algorithm is Insertion Sort",
+  "Your daily sorting algorithm is Intro Sort",
+  "Your daily sorting algorithm is Selection Sort",
+  "Your daily sorting algorithm is Timsort",
+  "Your daily sorting algorithm is Cube sort",
+  "Your daily sorting algorithm is Shell sort",
+  "Your daily sorting algorithm is Bubble Sort",
+  "Your daily sorting algorithm is Binary Tree Sort",
+  "Your daily sorting algorithm is Cycle Sort",
 ];
 
 /**
