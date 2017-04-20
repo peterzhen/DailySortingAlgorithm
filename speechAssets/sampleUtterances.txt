@@ -1,0 +1,13 @@
+GetNewFactIntent give me my daily sorting algorithm
+GetNewFactIntent give me sorting algorithm
+GetNewFactIntent what's my daily sorting algorithm
+GetNewFactIntent what's my sorting algorithm
+GetNewFactIntent for a new one
+GetNewFactIntent for a structure
+GetNewFactIntent for a new sorting algorithm
+GetNewFactIntent for a new daily sorting algorithm
+GetNewFactIntent give me a daily sorting algorithm
+GetNewFactIntent give me the daily sorting algorithm
+GetNewFactIntent tell me something
+GetNewFactIntent give me something
+GetNewFactIntent tell me my daily sorting algorithm
