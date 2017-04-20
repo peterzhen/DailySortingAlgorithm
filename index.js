@@ -1,11 +1,11 @@
 
 var APP_ID = undefined; //OPTIONAL: replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
 
-var DATASTRUCTURES = [
-  "Your Daily Data Structure is Linked Lists.  Linked lists are good for small amounts of data and non predictable data.  Searching is slow and the insertion order matters when searching.   Linked Lists are generally used when data is frequently inserted and deleted.  Linked Lists have a Search Time Complexity of O. of N.  A constant insertion speed.  And time complexity of O. of N for deletion",
-  "Your Daily Data Structure is Arrays.  For arrays, searching and deletion is slow.  Deletion is slow because an average of half the items must be moved to fill in the newly vacated cell.  You have fast access if the index is known.  For an ordered Array with a small amount data thats predictiable, search is faster than insertion.  For an unordered Array with a small amount of data thats predictable, insertion is faster than search.  Search and Deletion takes a time complexity of O. of N.  Insertion is constant time, assuming you are inserting at the end of the array.",
-  "Your Daily Data Structure is Binary Search Tree.  Binary search trees are usually the first choice when arrays and linked lists seem slow for solving the problem.  It's good for large amounts of data, where key distribution is random.  Searching, insertion and deletion can be slow in worst case with O. of N. time complexity.  Average case is O. log N. Unbalanced trees reduce performance.",
-  "Your Daily Data Structure is a Hash Table.  Hash Tables are good for large amounts of data, provides fast search and insertion.  This is the fastest data storage structure.  A hash table is not sensitive to the order in which the data is inserted.  The time complexity of searches, insertion and deletion is constant time.  If ordered traversal is necessary, a binary search tree is usually the better choice."
+var SORTINGALGORITHMS = [
+  "Your daily sorting algorithm is Quick Sort",
+  "Your daily sorting algorithm is Merge Sort",
+  "Your daily sorting algorithm is In Place merge sort",
+  "Your daily sorting algorithm is Heap Sort",
 ];
 
 /**
@@ -45,7 +45,7 @@ Question.prototype.intentHandlers = {
     },
 
     "AMAZON.HelpIntent": function (intent, session, response) {
-        response.ask("You can say give me my daily data structure, or, you can say exit... What can I help you with?", "What can I help you with?");
+        response.ask("You can say give me my daily sorting algorithm, or, you can say exit... What can I help you with?", "What can I help you with?");
     },
 
     "AMAZON.StopIntent": function (intent, session, response) {
@@ -61,12 +61,12 @@ Question.prototype.intentHandlers = {
 
 function handleNewQuestionRequest(response) {
     // Get a random space fact from the space facts list
-    var questionIndex = Math.floor(Math.random() * DATASTRUCTURES.length);
-    var randomQuestion = DATASTRUCTURES[questionIndex];
+    var questionIndex = Math.floor(Math.random() * SORTINGALGORITHMS.length);
+    var randomQuestion = SORTINGALGORITHMS[questionIndex];
 
     // Create speech output
-    var speechOutput = "Here's your Daily Data Structure: " + randomQuestion;
-    var cardTitle = "Your Daily Data Structure";
+    var speechOutput = "Here's your Daily Sorting Algorithm: " + randomQuestion;
+    var cardTitle = "Your Daily Sorting Algorithm";
     response.tellWithCard(speechOutput, cardTitle, speechOutput);
 }
 
