@@ -78,7 +78,6 @@ Question.prototype.intentHandlers = {
 };
 
 function handleNewQuestionRequest(response) {
-    // Get a random space fact from the space facts list
     var questionIndex = Math.floor(Math.random() * SORTINGALGORITHMS.length);
     var randomQuestion = SORTINGALGORITHMS[questionIndex];
 
@@ -90,7 +89,6 @@ function handleNewQuestionRequest(response) {
 
 // Create the handler that responds to the Alexa Request.
 exports.handler = function (event, context) {
-    // Create an instance of the SpaceGeek skill.
     var question = new Question();
     question.execute(event, context);
 };
