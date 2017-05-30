@@ -1,22 +1,22 @@
-## Daily Data Structure
+## Daily Sorting Algorithm
 
-[Alexa Store Link][dailydatastructure]
+[Alexa Store Link][dailysortingalgorithm]
 
-[dailydatastructure]: https://www.amazon.com/THOS-Daily-Sorting-Algorithms/dp/B071DH61G8/ref=sr_1_2?s=digital-skills&ie=UTF8&qid=1496123003&sr=1-2&keywords=sorting
+[dailysortingalgorithm]: https://www.amazon.com/THOS-Daily-Sorting-Algorithms/dp/B071DH61G8/ref=sr_1_2?s=digital-skills&ie=UTF8&qid=1496123003&sr=1-2&keywords=sorting
 
-DailyDataStructure is an Alexa Skill built for Amazon Echo that helps programmers stay sharp by practicing programming data structures.
+DailySortingAlgorithm is an Alexa Skill built for Amazon Echo that helps programmers stay sharp by practicing programming sorting algorithms.
 
 ## Instructions
 
-To use this Amazon Alexa Skill, follow the [link][dailydatastructure] to add the skill to your Amazon account.  This will enable the skill on all your Alexa enabled devices(Amazon Echo, Amazon Dot etc...).  To invoke DailyDataStructure simply say:
+To use this Amazon Alexa Skill, follow the [link][dailysortingalgorithm] to add the skill to your Amazon account.  This will enable the skill on all your Alexa enabled devices(Amazon Echo, Amazon Dot etc...).  To invoke DailySortingAlgorithm simply say:
 
-`"Alexa, open Daily Data Structure"`
+`"Alexa, open Daily Sorting Algorithm"`
 
-This will start up the application and ask a random algorithms question for you to answer.
+This will start up the application and provide you with a sorting algorithm.
 
 ## The Code
 
-ProgrammerQuiz is built using the `Amazon Alexa SDK` using Node and `JavaScript` as the language of choice.  Leveraging the `Alexa SDK`, I set up event listeners for specific voice commands to interact with the user when the program is active.  When a new request for a data structure is activated, a random data structure from the preset data is selected and is given to the user.
+Daily Sorting Algorithm is built using the `Amazon Alexa SDK` using Node and `JavaScript` as the language of choice.  Leveraging the `Alexa SDK`, I set up event listeners for specific voice commands to interact with the user when the program is active.  When a new request for a sorting algorithm is activated, a random sorting algorithm from the preset data is selected and is given to the user.
 
 ```javascript
 function createSpeechObject(optionsParam) {
