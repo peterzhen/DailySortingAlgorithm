@@ -1,5 +1,4 @@
-
-var APP_ID = undefined; //OPTIONAL: replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
+var APP_ID = undefined;
 
 var SORTINGALGORITHMS = [
   "Your daily sorting algorithm is Quick Sort",
@@ -43,12 +42,11 @@ Question.prototype = Object.create(AlexaSkill.prototype);
 Question.prototype.constructor = Question;
 
 Question.prototype.eventHandlers.onSessionStarted = function (sessionStartedRequest, session) {
-    //console.log("onSessionStarted requestId: " + sessionStartedRequest.requestId + ", sessionId: " + session.sessionId);
-    // any initialization logic goes here
+    console.log("onSessionStarted requestId: " + sessionStartedRequest.requestId + ", sessionId: " + session.sessionId);
 };
 
 Question.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
-    //console.log("onLaunch requestId: " + launchRequest.requestId + ", sessionId: " + session.sessionId);
+    console.log("onLaunch requestId: " + launchRequest.requestId + ", sessionId: " + session.sessionId);
     handleNewQuestionRequest(response);
 };
 
@@ -56,8 +54,7 @@ Question.prototype.eventHandlers.onLaunch = function (launchRequest, session, re
  * Overridden to show that a subclass can override this function to teardown session state.
  */
 Question.prototype.eventHandlers.onSessionEnded = function (sessionEndedRequest, session) {
-    //console.log("onSessionEnded requestId: " + sessionEndedRequest.requestId + ", sessionId: " + session.sessionId);
-    // any cleanup logic goes here
+    console.log("onSessionEnded requestId: " + sessionEndedRequest.requestId + ", sessionId: " + session.sessionId);
 };
 
 Question.prototype.intentHandlers = {
